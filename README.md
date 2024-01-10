@@ -28,3 +28,20 @@ Describe the installation process, including any dependencies that need to be in
 git clone https://github.com/your-username/graph-analysis-project.git
 cd graph-analysis-project
 pip install -r requirements.txt
+
+## Example usage
+python analyze_graph.py --input graph_data.txt
+
+graph-analysis-project/
+|-- src/
+|   |-- analyze_graph.py
+|   |-- utils.py
+|-- data/
+|   |-- graph_data.txt
+|-- tests/
+|   |-- test_analyze_graph.py
+|-- README.md
+|-- requirements.txt
+|-- .gitignore
+
+
