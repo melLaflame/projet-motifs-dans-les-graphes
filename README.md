@@ -1,30 +1,30 @@
-Sure! Here's an example README file that you could use for your GitHub project:
+# Graph Analysis Project
 
-Introduction
-This repository contains code for identifying network motifs in real-world and randomly generated graphs. A graph is a set of objects known as nodes or vertices, with relationships between pairs of nodes represented by edges or links. Graphs are used to model many different types of systems, including molecular structures, transportation networks, social networks, and more.
+## Introduction
 
-In this project, we aim to reproduce the results of the article "Superfamilies of Evolved and Designed Networks" by Reka Albert and Albert-Laszlo Barabasi (Milo et al., 2004), which identifies certain patterns or motifs within graphs and compares their prevalence in real-world and randomized networks. The implementation uses Python and the networkx library to perform various graph operations and generate random graphs.
+Un graphe est un ensemble d’objets qualifiés de noeuds dont la relation entre une paire de noeuds est modélisée par un objet qualifié d’arête ou arc. De nombreux systèmes peuvent être représentés par des graphes notamment en biologie, en chimie organique. On retrouve aussi ces objets dans les domaines des transports et des télécommunications. Par exemple, dans le cas de la chimie moléculaire, les molécules sont représentées par des graphes où les noeuds correspondent aux atomes et les arêtes représentent les liaisons (fortes ou faibles) entre atomes formant les molécules. On peut également représenter le métro parisien par un graphe où les noeuds représentent les stations et les arêtes, la présence d’une correspondance entre deux stations. Enfin dans le cas des réseaux sociaux, les noeuds représentent les individus et les arêtes représentent les liens d’amitiés entre individus.
 
-Installation
-To run the code, first install the required packages using pip:
-bash pip install -r requirements.txt 
-Usage
-The main functionality is provided by the projet.py script, which takes command line arguments specifying the input graph files and output directories. To execute the script, simply call it from the command line:
+L’analyse de ces graphes est complexe et afin d’extraire des informations de ces graphes, nous avons besoin, par exemple, d’identifier des sous-structures fréquentes. Notre objectif sera donc de reproduire les résultats de l’article de Milo et al.: “Superfamilies of Evolved and Designed Networks” [1], c’est-à-dire identifier certains motifs spécifiques dans un graphe réel, permettant d’en comparer la présence avec des graphes générés aléatoirement.
 
-python projet.py <real_graph> <random_graphs_dir> <output_dir>
-Where:
+## Project Overview
 
-<real_graph> is the filename of the real-world graph in edge list format (space-separated source node ID, target node ID).
-<random_graphs_dir> is the directory containing the edge list files for the random graphs.
-<output_dir> is the directory where the results will be saved.
-Results
-After running the script, the following output files will be created in the specified <output_dir>:
+Provide a brief overview of the goals and scope of the project.
 
-motifs.pdf: Visualization of identified motifs present in the real-world graph.
-motifs_stats.csv: CSV table summarizing the frequency of each motif found in both the real-world and random graphs.
-subgraphs_count.json: JSON object containing counts of all possible subgraphs up to size 5 in the real-world and random graphs.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## Table of Contents
 
-Acknowledgments
-Thanks to the authors of the original paper "Superfamilies of Evolved and Designed Networks", whose work inspired this implementation.
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Project Structure](#project-structure)
+4. [Dependencies](#dependencies)
+5. [Contributing](#contributing)
+6. [License](#license)
+
+## Installation
+
+Describe the installation process, including any dependencies that need to be installed.
+
+```bash
+# Example installation steps
+git clone https://github.com/your-username/graph-analysis-project.git
+cd graph-analysis-project
+pip install -r requirements.txt
